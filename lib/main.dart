@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:searchable_grid/Screens/crossword_widget.dart';
-import 'package:searchable_grid/Screens/main_screen.dart';
 import 'package:searchable_grid/Screens/splash_screen.dart';
 
 
@@ -22,6 +20,7 @@ class MyApp extends StatelessWidget {
       ),
     //  home: CrossWords()
       home:  SplashScreen()
+     // home:  example()
 
     );
   }

@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:searchable_grid/Screens/main_screen.dart';
+import 'package:searchable_grid/Screens/word_search.dart';
+
 
 
 
@@ -17,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(
        const Duration(milliseconds:  3500),
             () => Navigator.of(context).pushReplacement(MaterialPageRoute(
-            builder: (BuildContext context) => const CrossWords())));
+            builder: (BuildContext context) =>  word_search())));
   }
 
   @override
