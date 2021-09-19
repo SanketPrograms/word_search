@@ -163,6 +163,7 @@ class _word_searchState extends State<word_search> {
                             // gridState = controllerMRow.text;
 
                             setState(() {
+                              searchwordController.text = "Word";
                               ColumnText = ControllerColumn.text.toString();
                               hideInputCController = true;
                               rowCount = int.parse(ControllerColumn.text);
@@ -207,6 +208,7 @@ class _word_searchState extends State<word_search> {
                           onPressed: () {
                             setState(() {
 
+                              print(searchwordController.text);
                              if(inputController.text.isNotEmpty) {
                                if (j < gridState.length) {
                                  j++;
@@ -374,7 +376,7 @@ class _word_searchState extends State<word_search> {
                       width: double.infinity,
 
                       decoration: BoxDecoration(
-                        color:gridState[x][y].contains(searchwordController.text.toString())||searchwordController.text.isNotEmpty?Colors.yellowAccent.shade100: Colors.white,
+                        color:gridState[x][y].contains(searchwordController.text.toString())||searchwordController.text.isEmpty?Colors.yellowAccent.shade100: Colors.white,
                           border: Border.all(width: 0.5)),
           child: Center(
                             child: _buildGridItem(x, y),
